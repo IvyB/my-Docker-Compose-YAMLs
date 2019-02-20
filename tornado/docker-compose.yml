@@ -1,0 +1,14 @@
+version: '2'
+services:
+
+  tornado:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/var/tornado/app
+      - ./data:/var/tornado/data
+      - ./logs:/var/tornado/logs
+
+    command:
+        python /var/tornado/app/server.py
