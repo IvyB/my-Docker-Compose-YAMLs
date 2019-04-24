@@ -10,4 +10,4 @@ application = tornado.web.Application(Handlers)
 if __name__ == "__main__":
     application.listen(8000)
     print("Server Listening on 8000...")
-    tornado.ioloop.IOLoop.instance().start()
+    tornado.ioloop.IOLoop.current().start()
