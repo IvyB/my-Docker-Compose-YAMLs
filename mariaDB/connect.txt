@@ -1,0 +1,6 @@
+create user 'root'@'%' identified by 'password';
+
+grant all privileges on *.* to 'root'@'%' identified by 'password'; 
+
+flush privileges;
+ 
